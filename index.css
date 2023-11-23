@@ -189,3 +189,27 @@ nav ul li a:hover::after{
     color: #ff004f;
     
 }
+/*------MEDIA QUERY------*/
+@media only screen and(max-width: 600px){
+    .subt{
+        font-size: 40px;
+    }
+    .about-col1 .about-col2{
+        flex-basis: 100%;
+
+    }
+    .about-col1 {
+        margin-bottom: 30px;
+    }
+    .about-col1 img{
+        width:100%;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+        
+    }
+}
