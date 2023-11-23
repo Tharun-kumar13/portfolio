@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/195ba655c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="head">
+        <div  class="container">
+            
+            <nav>
+                <ul>
+                    <li><h1 class="head">Tharun</h1></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Achievements</a></li>
+                    <li><a href="#">search</a></li>
+                </ul>
+            </nav>
+        
+            <div class="header-text">
+                <p>CSE Student</p><h1>I'm <span>Tharun</span></h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+
+                <div class="about-col1">
+                    <img  src="./me2.jpg">
+
+                </div>
+                <div class="about-col2">
+                    <h2 class="subt">About Me</h2>
+                    <p>Hey there! I'm currently in my third year of B.Tech in Computer Science and Engineering. You know, the whole coding and tech world really gets me going—I love diving into those complex problems and coming up with solutions.</p>
+                
+                <div class="tab-title">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C, Python ,Java </li>
+                        <li><span>Scripting</span><br>JavaScript , perl, php</li>
+                        <li><span>Mark up Languages</span><br>HTML,CSS</li>
+                        <li><span>Data Base</span><br>Mysql</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>B.Tech cse</span><br>Malla Reddy College of Engineering and technology</li>
+                        <li><span>Inter MPC</span><br>TSRJC Enkoor -97.2%</li>
+                        <li><span>upto 10 - </span><br>ZPHS Chinthakani - 9.5%</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents " id="Experience">
+                    <ul>
+                        <li><span>Projects</span><br>I have gone through Some real time projects 
+                        those projects really push me to exceed my limits...</li>
+                    
+
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+<!---------Achievements--------->
+        <div class="container">
+            <h1 class="ach-h1">Achievements</h1>
+            <div class="achievement-row">
+                <div class="Sports">
+                    <h3  style="color: aqua">sports</h3>
+                    <p><span>Volley Ball</span><br>-> won Inter District 3r Telangana 
+                        Volley Ball Champion ship 1st Prize</p>
+                        <p> -> Won Several medals from school to till now in different sports and Games</p>
+                </div>
+                <div class="Ideathon">
+                    <h3 style="color: aqua" >Ideathon</h3>
+                    <p>Won 1st prize in  Ideathon event organized by CSE Department MRCET </p>
+                </div>
+                <div class="business-plan">
+                    <h3 style="color: aqua">Business Plan</h3>
+                    <p>Won 3rd prize in Business Plan Event organized by IT depatment MRCET</p>
+                </div>
+            </div>
+
+        </div>
+    
+
+    </div>
+<!------CONTACt-->
+<div class="contact">
+<div class="conatiner">
+    <div class="row">
+        <div class="contact-left">
+            <h1>Contact Me</h1>
+            <div class="social-icon">
+                <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-at"></i></a>tharun132213@gmail.com</p>
+               <p><a href="https://www.instagram.com/tharun_22___/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>tharun22_</p>
+                <p><a href=""><i class="fa-brands fa-whatsapp"></i></a>+91 9666720127</p>
+
+            </div>
+
+        </div>
+        <div class="contact-left"></div>
+        <div class="contact-left"></div>
+
+    </div>
+</div>
+
+</div>
+</body>
+<script>
+    let tablinks= document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    let val=true;
+
+    function opentab(tabname){
+        
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        val=false;
+    
+
+}
+
+    </script>
+</html>
