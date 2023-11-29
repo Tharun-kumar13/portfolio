@@ -232,6 +232,11 @@ text-decoration: none;
         flex-basis: 100%;
 
     }
+    #about {
+    padding: 80px 0;
+    color: #ababab;
+    margin-top: -300px;
+}
     .about-col1 {
         margin-bottom: 30px;
     }
