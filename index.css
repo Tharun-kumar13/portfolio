@@ -198,6 +198,10 @@ nav ul li a:hover::after {
 }
 
 /*-------AChievements ------*/
+.container {
+    left: 0;
+}
+
 .achievement-row {
 
     justify-content: space-between;
@@ -292,7 +296,7 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 100px;
         font-size: 16px;
 
     }
@@ -304,6 +308,14 @@ nav .fas {
     .about-col1 .about-col2 {
         flex-basis: 100%;
 
+    }
+
+    #about .container .row {
+        margin-top: -50%;
+    }
+
+    .container {
+        left: 0;
     }
 
     .about-col1 {
