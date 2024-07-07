@@ -411,11 +411,7 @@ nav .fas {
 
     }
 
-    .pro {
-        width: 110%;
-
-    }
-
+   
 
     .pro .projects {
         overflow-x: auto;
@@ -427,10 +423,7 @@ nav .fas {
 
     }
 
-    .achievement-row {
-        width: 100%;
-        overflow: hidden;
-    }
+   
 
 
 }
