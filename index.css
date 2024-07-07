@@ -210,6 +210,7 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     overflow-x: auto;
+    transition: 0.5s;
 
 }
 
@@ -225,14 +226,20 @@ nav ul li a:hover::after {
 
 .Sports {
     flex-basis: 35%;
+    transition: 0.5s;
+
 }
 
 .Ideathon {
     flex-basis: 20%;
+    transition: 0.5s;
+
 }
 
 .business-plan {
     flex-basis: 25%;
+    transition: 0.5s;
+
 }
 
 .achievement-row div {
@@ -245,6 +252,8 @@ nav ul li a:hover::after {
 .achievement-row div:hover {
     background: #3d0416;
     transform: translateY(-10px);
+    transition: 0.5s;
+
 }
 
 .contact-left p:hover {
@@ -290,9 +299,6 @@ nav .fas {
     font-weight: 1000;
 }
 
-.achievement-row {
-    overflow-x: auto;
-}
 
 .pro .projects {
     overflow-x: auto;
@@ -304,7 +310,9 @@ nav .fas {
 }
 
 /*------MEDIA QUERY------*/
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 600px) {
+
+
     .subt {
         font-size: 40px;
     }
@@ -400,7 +408,14 @@ nav .fas {
         flex-direction: row;
         padding-top: 30px;
         margin-left: -150px;
+
     }
+
+    .pro {
+        width: 200%;
+
+    }
+
 
     .pro .projects {
         overflow-x: auto;
@@ -410,6 +425,11 @@ nav .fas {
     .projects::-webkit-scrollbar {
         width: 0px;
 
+    }
+
+    .achievement-row {
+        width: 150%;
+        overflow: hidden;
     }
 
 
@@ -475,11 +495,16 @@ ul li:hover .dropdown ul {
 }
 
 /***********************************/
+.pro {
+    margin-top: -50px;
+}
+
 .projects {
     display: flex;
     flex-direction: row;
     position: relative;
     gap: 2rem;
+
 }
 
 .projects,
@@ -492,8 +517,8 @@ ul li:hover .dropdown ul {
 .TDL,
 .WF {
     background-color: #262626;
-    height: 100px;
-    width: 200px;
+    height: 130px;
+    width: 230px;
     border-radius: 5px;
     text-align: center;
     padding: 10px;
@@ -531,8 +556,8 @@ ul li:hover .dropdown ul {
 }
 
 .projects .RPS img {
-    width: 210px;
-    height: 120px;
+    width: 250px;
+    height: 160px;
     background-size: cover;
     background: transparent;
     z-index: -10;
@@ -549,8 +574,8 @@ ul li:hover .dropdown ul {
 }
 
 .projects .WF img {
-    width: 210px;
-    height: 120px;
+    width: 250px;
+    height: 160px;
     background-size: cover;
     background: transparent;
     z-index: -10;
@@ -568,8 +593,8 @@ ul li:hover .dropdown ul {
 }
 
 .projects .TDL img {
-    width: 210px;
-    height: 120px;
+    width: 250px;
+    height: 160px;
     background-size: cover;
     background: transparent;
     z-index: -10;
