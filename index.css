@@ -422,8 +422,14 @@ nav .fas {
         width: 0px;
 
     }
+    .pro {
+        width: 110%;
+    }
+      .achievement-row {
+        width: 100%;
+        overflow: hidden;
+    }
 
-   
 
 
 }
